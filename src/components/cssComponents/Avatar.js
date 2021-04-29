@@ -10,16 +10,16 @@ function Avatar() {
       <div>
         <div className="content-center" style={{alignItems:"flex-end"}}>
           <img
-            src="https://bit.ly/3dbHVdU"
+            src="https://avatars0.githubusercontent.com/u/56619260?v=4"
             alt="avatar"
             className="avatar-s ml-4 mr-4"
           />
           <img
-            src="https://bit.ly/3dbHVdU"
+            src="https://avatars0.githubusercontent.com/u/56619260?v=4"
             alt="avatar"
             className="avatar-md mr-4"
           />
-          <img src="https://bit.ly/3dbHVdU" alt="avatar" className="avatar-l" />
+          <img src="https://avatars0.githubusercontent.com/u/56619260?v=4" alt="avatar" className="avatar-l" />
         </div>
 
         <iframe
