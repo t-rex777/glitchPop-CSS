@@ -1,16 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 
-function SideNav() {
-  const [activeMenu, setActiveMenu] = useState(false);
-  const toggleMenu = () => setActiveMenu(!activeMenu);
+function SideNav({activeMenu,toggleMenu}) {
+
  
   return (
     <div>
-      {!activeMenu && (
+      {/* {!activeMenu && (
         <span className="hamMenu" onClick={toggleMenu}>
           <i className="fa fa-bars" aria-hidden="true"></i>
         </span>
-      )}
+      )} */}
 
       <div
         style={{ height: "1000px" }}

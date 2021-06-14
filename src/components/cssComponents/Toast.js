@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import App from "./../../App";
+import App from "../../Base";
 
 function Toast() {
   const [toastStyle, setToastStyle] = useState({ display: "none" });

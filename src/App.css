@@ -25,13 +25,23 @@
   grid-area: nav;
 }
 
-.grid-template {
+.app {
   display: grid;
   grid-template-areas:
     "nav nav nav"
     "sideNav main main"
     "sideNav main main";
 }
+.nav-item{
+  padding: 0;
+  margin: 0 1rem;
+}
+
+.nav-item:nth-child(1) {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .sideNav-items {
   height: 100vh;
 }
@@ -50,9 +60,6 @@
 .sideNav-item > a:hover {
   color: #e84545;
 }
-.hamMenu {
-  display: none;
-}
 
 .sideNav.active {
   transition: 0.75s;
@@ -62,9 +69,10 @@
   width: 220px;
 }
 .hamMenu {
+  align-self: center;
   display: block;
   width: 40px;
-  margin: 0 auto;
+  margin: 1rem 2rem 0 1rem;
 }
 
 .fa-bars,
@@ -78,6 +86,7 @@
   color: white;
 }
 .nav-logo {
+  align-self: center;
   font-size: 2rem;
   font-family: "Staatliches", cursive;
   color: #e84545;
@@ -121,10 +130,10 @@
   line-height: 3rem;
   margin-bottom: 1rem;
 }
-.uti{
-  border:solid 1px rgb(190, 187, 187);
+.uti {
+  border: solid 1px rgb(190, 187, 187);
   padding: 1rem;
-  margin : 0.5rem ;
+  margin: 0.5rem;
 }
 .header {
   font-size: 3rem;
@@ -138,7 +147,8 @@
   color: #fbbf24;
 }
 
-.logo {position: relative;
+.logo {
+  position: relative;
   top: 10px;
   margin-right: 1rem;
   width: 50px;

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import App from "./../../App";
+import App from "../../Base";
 
 function Modal() {
   const [modalStyle, setModalStyle] = useState({ display: "none" });

@@ -1,12 +1,19 @@
 import React from "react";
 import logo from "../images/sharingan.png";
-function Nav() {
+function Nav({activeMenu,toggleMenu}) {
+
   return (
     <div className="nav">
       <ul className="nav-items">
         <li className="nav-item">
+          <span
+            className="hamMenu"
+            onClick={toggleMenu}
+          >
+            <i className="fa fa-bars" aria-hidden="true"></i>
+          </span>
           <a href="/" className="nav-logo">
-            <img src={logo} alt="logo" className="logo"  />
+            <img src={logo} alt="logo" className="logo" />
             GlitchPop
           </a>
         </li>
