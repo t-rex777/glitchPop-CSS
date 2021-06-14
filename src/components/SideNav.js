@@ -1,26 +1,14 @@
 import React from "react";
+import logo from "../images/sharingan.png";
 
-function SideNav({activeMenu,toggleMenu}) {
-
- 
+function SideNav({ activeMenu, toggleMenu }) {
   return (
-    <div>
-      {/* {!activeMenu && (
-        <span className="hamMenu" onClick={toggleMenu}>
-          <i className="fa fa-bars" aria-hidden="true"></i>
-        </span>
-      )} */}
-
-      <div
-        style={{ height: "1000px" }}
-        className={activeMenu ? "sideNav active" : "sideNav"}
-      >
+    <div
+      // style={{ height: "1000px" }}
+      className={activeMenu ? "sideNav active" : "sideNav"}
+    >
+      <div>
         <ul className="sideNav-items">
-          <li className="sideNav-item">
-            <span style={{ marginLeft: "60px" }} onClick={toggleMenu}>
-              <i className="fa fa-times" aria-hidden="true"></i>
-            </span>
-          </li>
           <li className="sideNav-item">
             <a href="/">Getting Started</a>
           </li>
@@ -70,6 +58,8 @@ function SideNav({activeMenu,toggleMenu}) {
           <li className="sideNav-item">
             <a href="/toast">Toast/Snackbar</a>
           </li>
+
+         
         </ul>
       </div>
     </div>

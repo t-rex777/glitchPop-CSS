@@ -1,15 +1,11 @@
 import React from "react";
 import logo from "../images/sharingan.png";
-function Nav({activeMenu,toggleMenu}) {
-
+function Nav({ activeMenu, toggleMenu }) {
   return (
-    <div className="nav">
+    <nav className="nav nav-main">
       <ul className="nav-items">
         <li className="nav-item">
-          <span
-            className="hamMenu"
-            onClick={toggleMenu}
-          >
+          <span className="hamMenu" onClick={toggleMenu}>
             <i className="fa fa-bars" aria-hidden="true"></i>
           </span>
           <a href="/" className="nav-logo">
@@ -17,13 +13,13 @@ function Nav({activeMenu,toggleMenu}) {
             GlitchPop
           </a>
         </li>
-        <ul className="nav-items">
+        <div style={{display:"flex"}}>
           <li className="nav-item">
             <a href="https://github.com/t-rex777">
               <i
                 className="fa fa-github nav-social"
                 aria-hidden="true"
-                style={{ fontSize: "3rem" }}
+                
               ></i>
             </a>
           </li>
@@ -32,13 +28,13 @@ function Nav({activeMenu,toggleMenu}) {
               <i
                 className="fa fa-linkedin-square nav-social"
                 aria-hidden="true"
-                style={{ fontSize: "3rem" }}
+                
               ></i>
             </a>
           </li>
-        </ul>
+        </div>
       </ul>
-    </div>
+    </nav>
   );
 }
 

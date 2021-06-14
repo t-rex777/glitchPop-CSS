@@ -17,9 +17,7 @@ function Navbar() {
             </li>
             <li className="nav-item">home</li>
             <li className="nav-item">about</li>
-            <li className="nav-item">dashboard</li>
             <li className="nav-item">shop</li>
-            
           </ul>
         </nav>
       </div>
