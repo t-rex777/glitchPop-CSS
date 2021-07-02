@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import SideNav from "./components/SideNav";
 import "./App.css";
 import Nav from "./components/Nav";
+import Footer from './components/Footer';
 function Base({ children, header, description }) {
   const [activeMenu, setActiveMenu] = useState(false);
   const toggleMenu = () => setActiveMenu(!activeMenu);
@@ -19,6 +20,7 @@ function Base({ children, header, description }) {
           {children}
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

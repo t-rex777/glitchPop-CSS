@@ -4,7 +4,7 @@ import App from "../Base";
 function Home() {
   return (
     <App>
-      <div className="home mb-4">
+      <div className="home">
         <h1>
           Build fascinating, responsive websites with Glitch<span>Pop</span> CSS
         </h1>

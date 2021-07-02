@@ -114,7 +114,7 @@
 }
 
 .home {
-  margin: 2rem;
+  margin: 5rem;
 }
 .home > h1,
 .home > h1 > span {
@@ -171,6 +171,9 @@
 }
 
 @media screen and (max-width: 770px) {
+  .home{
+    margin : 2rem;
+  }
   .nav-social,
   .fa-bars,
   .fa-times {
