@@ -43,6 +43,7 @@
 
 .app-page {
   display: flex;
+  min-height: 100vh;
 }
 .logo {
   position: relative;
