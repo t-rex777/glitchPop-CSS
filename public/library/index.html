@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GlitchPop CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Font Awesome Icon Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuCF8u9Hiht5iQ7sV2ttYqfJkmnsBseSU7bg&usqp=CAU"
+      alt="avatar"
+      class="avatar"
+    />
+    <span class="badge-circle danger text-white">10</span>
+
+    <span class="badge-box success text-white">10</span>
+
+    <div class="alert dark text-white">
+      <h3>Successfully created something!</h3>
+    </div>
+    <button class="btn-primary">Primary</button>
+    <button class="btn-secondary">Secondary</button>
+    <button class="btn-warning">Warning</button>
+    <button class="btn-danger">Danger</button>
+    <button class="btn-success">Success</button>
+    <button class="btn-dark">Dark</button>
+    <button class="btn-float dark text-white">add</button>
+    <hr />
+    <div class="card">
+      <img
+        class="card-image"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuCF8u9Hiht5iQ7sV2ttYqfJkmnsBseSU7bg&usqp=CAU"
+        alt=""
+      />
+      <h1 class="card-header">This is a Card</h1>
+      <p class="card-body">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, odit ex
+        praesentium, repudiandae quam enim temporibus libero quidem nisi aperiam
+        maxime at consectetur tenetur? Officiis nobis dolorem non exercitationem
+        iusto?
+      </p>
+      <button class="card-btn">Read more...</button>
+    </div>
+    <div class="card">
+      <p class="overlay-text">Hey there this is an image overlay</p>
+      <img
+        class="card-image"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuCF8u9Hiht5iQ7sV2ttYqfJkmnsBseSU7bg&usqp=CAU"
+        alt=""
+      />
+      <h1 class="card-header">This is a Card</h1>
+      <p class="card-body">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, odit ex
+        praesentium, repudiandae quam enim temporibus libero quidem nisi aperiam
+        maxime at consectetur tenetur? Officiis nobis dolorem non exercitationem
+        iusto?
+      </p>
+      <button class="card-btn">Read more...</button>
+    </div>
+    <div class="card card-shadow">
+      <p class="overlay-text">Hey there this is an image overlay</p>
+      <img
+        class="card-image"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuCF8u9Hiht5iQ7sV2ttYqfJkmnsBseSU7bg&usqp=CAU"
+        alt=""
+      />
+      <h1 class="card-header">This is a Card</h1>
+      <p class="card-body">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, odit ex
+        praesentium, repudiandae quam enim temporibus libero quidem nisi aperiam
+        maxime at consectetur tenetur? Officiis nobis dolorem non exercitationem
+        iusto?
+      </p>
+      <button class="card-btn">Read more...</button>
+    </div>
+    <img
+      class="responsive"
+      src="https://cdn.britannica.com/67/19367-050-885866B4/Valley-Taurus-Mountains-Turkey.jpg"
+      alt=""
+    />
+    <img
+      class="responsive round-img"
+      src="https://cdn.britannica.com/67/19367-050-885866B4/Valley-Taurus-Mountains-Turkey.jpg"
+      alt=""
+    />
+
+    <form class="form-validation">
+      <div class="validation-message"></div>
+      <div class="row">
+        <label for="text">UserName</label>
+        <input
+          type="text"
+          name="username"
+          class="form-username"
+        /><br />
+      </div>
+      <div class="row">
+        <label for="text">Password</label>
+        <input
+          type="password"
+          name="password"
+          class="form-password"
+        /><br />
+      </div>
+      <div class="row">
+        <label for="text">Re-enter Password</label>
+        <input
+          type="password"
+          name="re-password"
+          class="form-rePassword"
+        /><br />
+      </div>
+
+      <button type="submit" class="form-btn">add</button>
+    </form>
+    <nav class="nav dark text-white">
+      <ul class="nav-items">
+        <li class="nav-item">home</li>
+        <li class="nav-item">about</li>
+        <li class="nav-item">dashboard</li>
+        <li class="nav-item">shop</li>
+        <li class="nav-item">contact us</li>
+      </ul>
+    </nav>
+    <button class="btn btn-warning modal-btn">Modal</button>
+    <div class="modal-active">
+      <div class="modal-contents">
+        <span class="modal-close">&times;</span>
+        <h1>Your Modal</h1>
+        <p>Your texts here</p>
+        <button class="btn btn-primary">Reset</button>
+        <button class="btn btn-secondary">Submit</button>
+      </div>
+    </div>
+    <br />
+    <div class="rating-card">
+      <h1>User Rating</h1>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+      <p>4.1 average based on 254 review</p>
+      <hr />
+      <div class="progressBars">
+        <div class="progressBar">
+          <h3>5 Star</h3>
+          <div class="bar">
+            <div class="success"></div>
+          </div>
+        </div>
+        <div class="progressBar">
+          <h3>4 Star</h3>
+          <div class="bar"><div class="primary"></div></div>
+        </div>
+        <div class="progressBar">
+          <h3>3 Star</h3>
+          <div class="bar"><div class="secondary"></div></div>
+        </div>
+        <div class="progressBar">
+          <h3>2 Star</h3>
+          <div class="bar"><div class="warning"></div></div>
+        </div>
+        <div class="progressBar">
+          <h3>1 Star</h3>
+          <div class="bar"><div class="danger"></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="heading">Heading</div>
+    <div class="small-text">Small text</div>
+    <div class="gray-text">Gray Text</div>
+    <div class="center-text">Center Text</div>
+    <button class="toast-btn">Toast/SnackBar Button</button>
+    <div class="toast dark text-white">
+      <p class="toast-message ">Some toast message</p>
+    </div>
+    <span class="badge-box-l success  m-1">99</span>
+  </body>
+</html>
