@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Staatliches&display=swap");
+@import url("https://glitchpop-css.herokuapp.com/library/styles.css");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+/* navigation menu */
+.hamMenu {
+  align-self: center;
+  display: block;
+  width: 30px;
+  margin: 1rem 2rem 0 1rem;
+}
+.nav-main {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.nav-logo {
+  align-self: center;
+  font-size: 2rem;
+  font-family: "Staatliches", cursive;
+  color: #e84545;
+  text-decoration: none;
+}
+.main {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 120px;
+  position: relative;
+}
+
+.nav-item {
+  padding: 0 !important;
+  margin: 0 1rem;
+}
+
+.nav-item:nth-child(1) {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.app-page {
+  display: flex;
+  min-height: 100vh;
+}
+.logo {
+  position: relative;
+  top: 10px;
+  margin-right: 1rem;
+  width: 50px;
+  animation: rotation 10s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+/* side bar navigation */
+.sideNav {
+  flex: 0.4;
+  background-color: #1c1427;
+  transition: 0.3s;
+  width: 200px;
+  /* height: 100vh; */
+  max-height: 80%;
+  /* min-height: 100%; */
+  padding: 1rem;
+  padding-bottom: 5rem;
+  position: fixed;
+  top: 110px;
+  transform: translateX(-100%);
+  z-index: 1;
+  overflow-y: scroll;
+}
+
+.sideNav.active {
+  transition: 0.3s;
+  top: 110px;
+  transform: translateX(0%);
+}
+
+.sideNav-item {
+  list-style-type: none;
+  font-size: 1rem;
+  line-height: 2.5rem;
+  margin-left: 1rem;
+}
+
+.sideNav-item > a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #fff;
+}
+.sideNav-item > a:hover {
+  color: #e84545;
+}
+
+.fa-bars,
+.fa-times {
+  color: #e84545;
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+.fa-bars:hover,
+.fa-times:hover {
+  color: white;
+}
+
+.home {
+  margin: 5rem;
+}
+.home > h1,
+.home > h1 > span {
+  margin-top: -3rem;
+  font-size: 4rem;
+  font-family: "Staatliches", cursive;
+}
+.home > h1 > span {
+  color: #e84545;
+}
+.home > p {
+  margin: 1.5rem 0;
+  font-size: 2rem;
+}
+.home > a > button {
+  padding: 1rem 2rem;
+  margin: 0 2rem 2rem 0;
+  background-color: #1c1427;
+  color: white;
+  font-size: 1.5rem;
+  border: solid 1px #1c1427;
+}
+.home > a > button:hover {
+  background-color: white;
+  color: #1c1427;
+}
+
+/* text utilities */
+.text-utilities {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30rem;
+  margin: 0 auto;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+}
+.uti {
+  border: solid 1px rgb(190, 187, 187);
+  padding: 1rem;
+  margin: 0.5rem;
+}
+.header {
+  font-size: 3rem;
+  font-family: "Staatliches", cursive;
+  text-align: center;
+}
+.nav-social {
+  color: aliceblue;
+  font-size: 2rem;
+}
+.fa:hover {
+  color: #fbbf24;
+}
+
+@media screen and (max-width: 770px) {
+  .home{
+    margin : 2rem;
+  }
+  .nav-social,
+  .fa-bars,
+  .fa-times {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+  .nav-social {
+    margin-top: 1.8rem;
+  }
+  .nav-logo {
+    align-content: center;
+    width: 120px;
+    font-size: 1.2rem;
+  }
+  .hamMenu {
+    width: 20px;
+  }
+  .logo {
+    width: 30px;
+    margin-right: 0;
+    top: 8px;
+  }
+  .nav-item {
+    font-size: 0.5rem;
+    padding: 1rem 0.75rem;
+  }
+
+  .sideNav {
+    top: 65px;
+    width: 150px;
+  }
+  .sideNav.active {
+    top: 65px;
+  }
+
+  .hor-list-item:nth-child(2n) {
+    display: none;
+  }
+  .text-utilities {
+    width: 200px;
+  }
+  .home > h1,
+  .home > h1 > span {
+    font-size: 2.5rem;
+    font-family: "Staatliches", cursive;
+  }
+  .home > p {
+    font-size: 1.3rem;
+  }
+  .home > a > button {
+    font-size: 0.8rem;
+    padding: 0.6rem 1rem;
+  }
+}
